@@ -8,8 +8,8 @@ proxy = xmlrpc.client.ServerProxy("http://localhost:8000/")
 html = proxy.obtener_pagina_html()
 
 # Guardar el HTML en un archivo local
-with open("pagina.html", "w", encoding="utf-8") as file:
+with open("index.html", "w", encoding="utf-8") as file:
     file.write(html)
 
 # Abrir la página en el navegador
-webbrowser.open("pagina.html")
+webbrowser.open("index.html")
